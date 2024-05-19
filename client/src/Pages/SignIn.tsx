@@ -6,6 +6,7 @@ import {
   signInStart,
   signInSuccess,
 } from "../redux/user/userSlice";
+import OAuth from "../Components/OAuth";
 
 type FormData = {
   [key: string]: string;
@@ -74,6 +75,7 @@ const SignIn: React.FC = () => {
         >
           {isLoading ? "Loading..." : "Sign in"}
         </button>
+        <OAuth />
       </form>
       <div className="flex gap-2 mt-5">
         <p>Don't have an account?</p>
