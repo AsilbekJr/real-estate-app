@@ -2,7 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 type isLoadingType = null | boolean;
 
-const initialState = {
+export type initialStateType = {
+  currentUser: null;
+  error: null;
+  isLoading: isLoadingType;
+};
+const initialState: initialStateType = {
   currentUser: null,
   error: null,
   isLoading: <isLoadingType>null,
