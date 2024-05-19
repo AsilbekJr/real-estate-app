@@ -1,9 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 type isLoadingType = null | boolean;
+type currentUserType = {
+  userName: string;
+  email: string;
+  avatar: string;
+} | null;
 
 export type initialStateType = {
-  currentUser: null;
+  currentUser: currentUserType;
   error: null;
   isLoading: isLoadingType;
 };
